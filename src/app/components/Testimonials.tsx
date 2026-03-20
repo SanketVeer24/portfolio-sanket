@@ -4,11 +4,13 @@ import SectionHeader from "./SectionHeader";
 
   const quotes = [
     {
+      id: 1,
       line : "“Sanket is exceptionally intelligent, adaptable, and professional. He consistently goes beyond expectations, builds trust across teams, and approaches challenges with maturity and strategic clarity.”",
       person : "— Shanon L Marable,",
       post: "Interim ACIO, Student Information Systems, University of Georgia"
     },
     {
+      id: 2,
       line : "“Sanket is exceptionally intelligent, adaptable, and professional. He consistently goes beyond expectations, builds trust across teams, and approaches challenges with maturity and strategic clarity.”",
       person : "— Kristianna McDaniel,",
       post: "IT Manager, Student Information Systems, University of Georgia"
@@ -25,7 +27,7 @@ export default function Testimonials() {
         subtitle="Endorsements that highlight judgment, maturity, and follow-through — not just raw skill."
       />
       {quotes.map((quote)=> (
-        <div> 
+        <div key={quote.id}> 
         <motion.div
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}

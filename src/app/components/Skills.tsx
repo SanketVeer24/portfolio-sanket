@@ -31,7 +31,7 @@ export default function Skills() {
         className="grid gap-5 md:grid-cols-3"
       >
         { skills.map((skill) => 
-        (<article className="rounded-2xl border border-slate-800 bg-black/40 p-4 text-xs text-slate-300">
+        (<article key={skill.type} className="rounded-2xl border border-slate-800 bg-black/40 p-4 text-xs text-slate-300">
           <h3 className="mb-2 text-sm font-semibold text-slate-50">
             {skill.type}
           </h3>
@@ -40,7 +40,7 @@ export default function Skills() {
           <ul className="space-y-1 grid md:grid-cols-2">
           {skill.list.map((item)=>( 
           
-            <li>{item}</li>))}
+            <li key={item}>{item}</li>))}
           </ul>
         
 

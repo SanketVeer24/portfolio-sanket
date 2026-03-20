@@ -1,12 +1,13 @@
 {
-  "homepage": "https://SanketVeer24.github.io/portfolio-sanket",
+  "homepage": "https://SanketVeer24.github.io/SanketVeer24.github.io",
   "name": "sanket-veer-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
     "framer-motion": "^12.24.0",
