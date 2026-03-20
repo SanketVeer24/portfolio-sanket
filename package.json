@@ -1,19 +1,19 @@
 {
-  "homepage": "https://SanketVeer24.github.io/portfolio-sanket",
+  "homepage": "https://SanketVeer24.github.io/SanketVeer24.github.io",
   "name": "sanket-veer-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "deploy": "gh-pages -d out"
+    "lint": "eslint"
   },
   "dependencies": {
-    "framer-motion": "^12.25.0",
-    "next": "^16.1.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "framer-motion": "^12.24.0",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
